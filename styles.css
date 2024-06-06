@@ -1,0 +1,150 @@
+/* Reset some basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and overall styling */
+body {
+  font-family: Lato, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+/* Navbar styling */
+nav {
+  background: #333;
+  color: #fff;
+  padding: 1rem;
+  position: fixed;
+  width: 100vw;
+  height: 10vh;
+  top: 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Hero section styling */
+#welcome-section {
+  text-align: center;
+  padding: 5rem 1rem;
+  margin-top: 10vh;
+  background: #f4f4f4;
+}
+
+#welcome-section h1 {
+  font-size: 3rem;
+}
+
+#welcome-section p {
+  font-size: 1.5rem;
+  color: #666;
+}
+
+/* Projects section styling */
+#projects {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+#projects h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.project-tile {
+  background: #e4e4e4;
+  padding: 2rem;
+  border: 1px solid #ccc;
+}
+
+#show-more {
+  margin-top: 2rem;
+  padding: 0.5rem 1rem;
+  background: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+#show-more:hover {
+  background: #555;
+}
+
+/* Contact section styling */
+#contact {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+#contact h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+#contact ul {
+  list-style: none;
+}
+
+#contact ul li {
+  margin: 0.5rem 0;
+}
+
+#contact ul li a {
+  color: #333;
+  text-decoration: none;
+}
+
+#contact ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Footer styling */
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  width: 100%;
+  height: 10vh;
+  bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .projects-grid {
+      grid-template-columns: 1fr;
+  }
+
+  #show-more {
+      width: 100%;
+  }
+}
